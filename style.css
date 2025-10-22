@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=RocknRoll+One&display=swap');
+
+*{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+}
+
+.logo{
+    width: 200px;
+    margin-left: 25px;
+    margin-right: 150px;
+}
+
+.navbar{
+    display: flex;
+    margin-top: 70px;
+    gap: 80px;
+}
+
+nav > a {
+    font-family: "RocknRoll One", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    font-style: normal;
+    text-decoration: none;
+    color: #A46851;
+    height: 8vh;
+}
+
+/* Landing page */
+
+.landing{
+    display: flex;
+    height: 75vh;
+}
+
+.left-landing{
+    display: flex;
+    flex-direction: column;
+    color: #A46851;
+    margin: auto;
+    margin-left: 8rem;
+    align-items: center;
+    gap: 50px;
+}
+
+.left-landing > h1{
+    font-family: "RocknRoll One", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+}
+
+.left-landing > p {
+    font-size: 20px;
+    text-align: center;
+    font-family: "RocknRoll One", sans-serif;
+    font-weight: 400;
+}
+
+.button{
+    background-color: #D05F33;
+    color: white;
+    font-family: "RocknRoll One", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    width: 7.5vw;
+    padding: 5px;
+    border-radius: 15px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.425);
+    padding: 5px 20px 6px 20px;
+    display: flex;
+    text-align: center;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.425);;
+}
+
+.brown-circle{
+    background-color: #D05F33;
+    width: 40vw;
+    height: 65vh;
+    border-radius: 100%;
+    margin-right: 55px;
+}
+
+.shadow-circle{
+    background-color: rgba(0, 0, 0, 0.351) ;
+    width: 15vw;
+    height: 5.5vh;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 8rem;
+    right: 16rem;
+    color: #D05F33;
+}
+
+.chicken{
+    width: 37vw;
+    position: absolute;
+    right: 40px;
+    top: 85px;
+}
+
+/* History page */
+
+.history{
+    background-color:#A46851;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    height: 100vh;
+}
+
+.history > h1 {
+    font-family: "RocknRoll One", sans-serif;
+    font-weight: 400;
+    font-size: 80px;
+    margin: auto;
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.425);
+}
+
+.history > p {
+    margin: auto;
+    margin-top: 20px;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+/* Units page */
+
+.units{
+    height: 100vh;
+}
+
+/* Products page */
+
+/* Footer */
+footer{
+    background-color:#A46851;
+    display: flex;
+    color: white;
+    align-items: center;
+    height: 10vh;
+}
+
+footer > p {
+    margin: auto;
+}
