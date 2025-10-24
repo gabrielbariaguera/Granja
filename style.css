@@ -15,8 +15,8 @@ header{
 
 .logo{
     width: 200px;
-    margin-left: 25px;
-    margin-right: 150px;
+    margin-left: 50px;
+    margin-right: 130px;
 }
 
 .navbar{
@@ -140,10 +140,154 @@ nav > a {
 
 .units{
     height: 100vh;
+    color: #A46851;
+    margin-left: 25vw;    
+}
+
+.granja1{
+    display: flex;
+    text-align: right;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 10vw;
+}
+
+.texts-granja > p{
+    font-family: "RocknRoll One", sans-serif;
+    font-weight: 400;
+}
+
+.texts-granja > h3 {
+    font-family: "RocknRoll One", sans-serif;
+    font-weight: 400;
+}
+
+.imggranja1{
+    background-color:#D05F33;
+    width: 30vw;
+    border-radius: 15px;
+    padding: 5px 5px 2px 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.416);
+}
+
+.imggranja1 > img {
+    width: 30vw;
+    border-radius: 15px;
+}
+
+.granja2{
+    display: flex;
+    align-items: end;
+    margin-left: -10vw;
+}
+
+.texts-granja > p{
+    font-family: "RocknRoll One", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.texts-granja > h3 {
+    font-family: "RocknRoll One", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.imggranja2{
+    background-color:#D05F33;
+    width: 30vw;
+    border-radius: 15px;
+    padding: 5px 5px 2px 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.416);
+}
+
+.imggranja2 > img{
+    width: 30vw;
+    border-radius: 15px;
 }
 
 /* Products page */
 
+.products{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.white-egg{
+    display: flex;
+}
+
+.free-range-egg{
+    display: flex;
+}
+
+.quail-egg{
+    display: flex;
+}
+
+.quail{
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+.circle-left{
+    background-color: #D05F33;
+    border-radius: 100%;
+    width: 16vw;
+    height: 32vh;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.416);
+}
+
+.circle-right{
+    background-color: #D05F33;
+    border-radius: 100%;
+    width: 16vw;
+    height: 32vh;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.416);
+}
+
+.circle-left > img, .circle-right > img {
+    width: 15vw;
+}
+
+.bar-r{
+    background-color: #A46851;
+    width: 60vw;
+    height: 20vh;
+    color: white;
+    border-radius: 15px;
+    align-content: center;
+    margin-top: 50px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.416);
+    text-align: right;
+}
+
+.bar-l{
+    background-color: #A46851;
+    width: 60vw;
+    height: 20vh;
+    color: white;
+    border-radius: 15px;
+    align-content: center;
+    margin-top: 50px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.416);
+}
+
+.bar-l > p{
+    font-family: "RocknRoll One", sans-serif;
+    font-weight: 400;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.425);
+    font-size: 20px;
+}
+
+.bar-r > p{
+    font-family: "RocknRoll One", sans-serif;
+    font-weight: 400;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.425);
+    font-size: 20px;
+}
 /* Footer */
 footer{
     background-color:#A46851;
