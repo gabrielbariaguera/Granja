@@ -91,14 +91,15 @@ nav > a {
 }
 
 .shadow-circle{
-    background-color: rgba(0, 0, 0, 0.351) ;
+    background-color: rgba(0, 0, 0, 0.351);
     width: 15vw;
     height: 5.5vh;
     border-radius: 100%;
     position: absolute;
     bottom: 8rem;
     right: 16rem;
-    color: #D05F33;
+    color: transparent;
+    transition: all 0.3s ease;
 }
 
 .chicken{
@@ -255,10 +256,14 @@ nav > a {
 .bar-r{
     background-color: #A46851;
     width: 60vw;
-    height: 20vh;
+    height: auto;
+    min-height: 20vh;
     color: white;
     border-radius: 15px;
-    align-content: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin-top: 50px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.416);
     text-align: right;
@@ -267,12 +272,24 @@ nav > a {
 .bar-l{
     background-color: #A46851;
     width: 60vw;
-    height: 20vh;
+    height: auto;
+    min-height: 20vh;
     color: white;
     border-radius: 15px;
-    align-content: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin-top: 50px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.416);
+}
+
+.bar-l > h3, .bar-r > h3 {
+    font-family: "RocknRoll One", sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.425);
 }
 
 .bar-l > p{
@@ -299,4 +316,491 @@ footer{
 
 footer > p {
     margin: auto;
+}
+
+/* =============================================
+   RESPONSIVIDADE
+   ============================================= */
+
+/* Desktop grande e médio - ajustes finos */
+@media (max-width: 1200px) {
+    .logo {
+        width: 180px;
+        margin-left: 30px;
+        margin-right: 80px;
+    }
+    
+    .navbar {
+        gap: 50px;
+    }
+    
+    nav > a {
+        font-size: 26px;
+    }
+    
+    .shadow-circle {
+        width: 14vw;
+        bottom: 7rem;
+        right: 14rem;
+    }
+    
+    .units {
+        margin-left: 15vw;
+    }
+    
+    .granja1 {
+        margin-left: 5vw;
+    }
+}
+
+/* Tablet landscape */
+@media (max-width: 992px) {
+    /* Header */
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+    }
+    
+    .logo {
+        margin: 0 0 15px 0;
+        width: 160px;
+    }
+    
+    .navbar {
+        margin-top: 0;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    nav > a {
+        font-size: 22px;
+    }
+    
+    /* Landing */
+    .landing {
+        flex-direction: column;
+        height: auto;
+        padding: 30px 20px;
+    }
+    
+    .left-landing {
+        margin: 20px auto;
+        gap: 30px;
+    }
+    
+    .left-landing > h1 {
+        font-size: 32px;
+    }
+    
+    .left-landing > p {
+        font-size: 18px;
+    }
+    
+    .button {
+        width: auto;
+        min-width: 150px;
+    }
+    
+    .brown-circle {
+        width: 60vw;
+        height: 60vw;
+        max-width: 400px;
+        max-height: 400px;
+        margin: 20px auto;
+        position: relative;
+    }
+    
+    .shadow-circle {
+        width: 20vw;
+        max-width: 100px;
+        height: 4vh;
+        bottom: 15%;
+        right: 18%;
+        left: auto;
+        position: absolute;
+    }
+    
+    .chicken {
+        width: 55vw;
+        max-width: 350px;
+        position: relative;
+        right: auto;
+        top: auto;
+        margin: 0 auto;
+    }
+    
+    /* History */
+    .history {
+        height: auto;
+        min-height: 80vh;
+        padding: 60px 20px;
+    }
+    
+    .history > h1 {
+        font-size: 60px;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    
+    .history > p {
+        font-size: 28px;
+        padding: 0 20px;
+    }
+    
+    /* Units */
+    .units {
+        height: auto;
+        margin-left: 0;
+        padding: 60px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+    
+    .granja1, .granja2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        gap: 20px;
+        max-width: 600px;
+    }
+    
+    .texts-granja {
+        order: 1;
+    }
+    
+    .imggranja1, .imggranja2 {
+        order: 2;
+        width: 80vw;
+        max-width: 500px;
+    }
+    
+    .imggranja1 > img, .imggranja2 > img {
+        width: 100%;
+    }
+    
+    .texts-granja > h3 {
+        font-size: 32px;
+    }
+    
+    .texts-granja > p {
+        font-size: 18px;
+    }
+    
+    /* Products */
+    .products {
+        height: auto;
+        padding: 60px 20px;
+        gap: 40px;
+    }
+    
+    .white-egg, .free-range-egg, .quail-egg {
+        flex-direction: column;
+        align-items: center;
+        max-width: 600px;
+        gap: 20px;
+    }
+    
+    .circle-left, .circle-right {
+        width: 200px;
+        height: 200px;
+        order: 1;
+    }
+    
+    .circle-left > img, .circle-right > img {
+        width: 180px;
+    }
+    
+    .bar-l, .bar-r {
+        width: 80vw;
+        max-width: 500px;
+        height: auto;
+        padding: 25px;
+        margin-top: 0;
+        order: 2;
+        text-align: center;
+    }
+    
+    .bar-l > h3, .bar-r > h3 {
+        font-size: 24px;
+    }
+    
+    .bar-l > p, .bar-r > p {
+        font-size: 18px;
+    }
+}
+
+/* Tablet portrait e mobile landscape */
+@media (max-width: 768px) {
+    .navbar {
+        gap: 20px;
+    }
+    
+    nav > a {
+        font-size: 20px;
+        padding: 8px 12px;
+    }
+    
+    .left-landing > h1 {
+        font-size: 28px;
+    }
+    
+    .left-landing > p {
+        font-size: 16px;
+    }
+    
+    .brown-circle {
+        width: 70vw;
+        height: 70vw;
+    }
+    
+    .shadow-circle {
+        width: 22vw;
+        max-width: 110px;
+        height: 3.5vh;
+        bottom: 12%;
+        right: 16%;
+    }
+    
+    .chicken {
+        width: 65vw;
+    }
+    
+    .history > h1 {
+        font-size: 48px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    
+    .history > p {
+        font-size: 22px;
+    }
+    
+    .texts-granja > h3 {
+        font-size: 28px;
+    }
+    
+    .texts-granja > p {
+        font-size: 16px;
+    }
+    
+    .imggranja1, .imggranja2 {
+        width: 85vw;
+    }
+    
+    .circle-left, .circle-right {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .circle-left > img, .circle-right > img {
+        width: 160px;
+    }
+    
+    .bar-l, .bar-r {
+        width: 85vw;
+        padding: 20px;
+    }
+    
+    .bar-l > h3, .bar-r > h3 {
+        font-size: 22px;
+    }
+    
+    .bar-l > p, .bar-r > p {
+        font-size: 16px;
+    }
+    
+    .quail {
+        margin-top: 30px;
+        margin-left: 5px;
+    }
+}
+
+/* Mobile portrait */
+@media (max-width: 576px) {
+    .logo {
+        width: 140px;
+    }
+    
+    .navbar {
+        gap: 15px;
+        padding: 0 10px;
+    }
+    
+    nav > a {
+        font-size: 16px;
+        padding: 6px 10px;
+    }
+    
+    .left-landing > h1 {
+        font-size: 24px;
+    }
+    
+    .left-landing > p {
+        font-size: 14px;
+        br {
+            display: none;
+        }
+    }
+    
+    .button {
+        font-size: 16px;
+        padding: 8px 20px;
+    }
+    
+    .brown-circle {
+        width: 80vw;
+        height: 80vw;
+    }
+    
+    .shadow-circle {
+        width: 24vw;
+        max-width: 120px;
+        height: 3vh;
+        bottom: 10%;
+        right: 14%;
+    }
+    
+    .chicken {
+        width: 75vw;
+    }
+    
+    .history {
+        padding: 40px 15px;
+        min-height: 60vh;
+    }
+    
+    .history > h1 {
+        font-size: 36px;
+    }
+    
+    .history > p {
+        font-size: 18px;
+        padding: 0 10px;
+    }
+    
+    .units {
+        padding: 40px 15px;
+        gap: 40px;
+    }
+    
+    .texts-granja > h3 {
+        font-size: 24px;
+    }
+    
+    .texts-granja > p {
+        font-size: 14px;
+        br {
+            display: none;
+        }
+    }
+    
+    .imggranja1, .imggranja2 {
+        width: 90vw;
+    }
+    
+    .products {
+        padding: 40px 15px;
+        gap: 30px;
+    }
+    
+    .circle-left, .circle-right {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .circle-left > img, .circle-right > img {
+        width: 130px;
+    }
+    
+    .bar-l, .bar-r {
+        width: 90vw;
+        padding: 18px;
+    }
+    
+    .bar-l > h3, .bar-r > h3 {
+        font-size: 20px;
+    }
+    
+    .bar-l > p, .bar-r > p {
+        font-size: 14px;
+    }
+    
+    .quail {
+        margin-top: 20px;
+    }
+}
+
+/* Mobile extra pequeno */
+@media (max-width: 480px) {
+    .logo {
+        width: 120px;
+    }
+    
+    .navbar {
+        gap: 10px;
+    }
+    
+    nav > a {
+        font-size: 14px;
+        padding: 5px 8px;
+    }
+    
+    .left-landing > h1 {
+        font-size: 20px;
+    }
+    
+    .left-landing > p {
+        font-size: 13px;
+    }
+    
+    .shadow-circle {
+        width: 26vw;
+        max-width: 100px;
+        height: 2.5vh;
+        bottom: 8%;
+        right: 12%;
+    }
+    
+    .history > h1 {
+        font-size: 30px;
+    }
+    
+    .history > p {
+        font-size: 16px;
+    }
+    
+    .texts-granja > h3 {
+        font-size: 22px;
+    }
+    
+    .texts-granja > p {
+        font-size: 13px;
+    }
+    
+    .circle-left, .circle-right {
+        width: 130px;
+        height: 130px;
+    }
+    
+    .circle-left > img, .circle-right > img {
+        width: 110px;
+    }
+    
+    .bar-l > h3, .bar-r > h3 {
+        font-size: 18px;
+    }
+    
+    .bar-l > p, .bar-r > p {
+        font-size: 13px;
+    }
+    
+    footer {
+        height: 8vh;
+        font-size: 14px;
+    }
 }
