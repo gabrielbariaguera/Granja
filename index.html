@@ -1,93 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Granjacema: tradição, qualidade e produtos frescos direto da granja.">
     <title>Granjacema</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
-        <img src="./img/ChatGPT_Image_27_de_set._de_2025__14_04_09-removebg-preview.png" alt="" class="logo">
-        <nav class="navbar">
+    <header class="site-header">
+        <a class="brand" href="#top" aria-label="Granjacema - início">
+            <img src="./img/ChatGPT_Image_27_de_set._de_2025__14_04_09-removebg-preview.png" alt="Logo da Granjacema" class="logo">
+            <span>Granjacema</span>
+        </a>
+        <nav class="navbar" aria-label="Navegação principal">
             <a href="#history">A Granja</a>
             <a href="#units">Unidades</a>
             <a href="#products">Produtos</a>
-            <a href="#">Contato</a>
+            <a href="#contact">Contato</a>
         </nav>
     </header>
-    <main>
-        <div class="landing">
-            <div class="left-landing">
-                <h1>Quer ter uma experiência <br> OVÁSTICA?!</h1>
-                <p>Conheça agora a Granjacema, localizada na <br>
-                    cidade de São João de Iracema, nossos <br>
-                    produtos são de ovacionar!</p>
-                <a href="" class="button">Saiba mais</a>
-            </div>
-            <div class="right-landing">
-                <div class="brown-circle">
-                    <div class="shadow-circle">.</div>
-                    <img src="img/cornish-chicken-rooster-ai-generated-free-png.webp" alt="" class="chicken">
+
+    <main id="top">
+        <section class="hero section-shell">
+            <div class="hero-copy">
+                <p class="eyebrow">Produção local • cuidado diário • sabor de verdade</p>
+                <h1>Uma experiência ovástica, bonita e feita com carinho.</h1>
+                <p class="hero-text">Conheça a Granjacema, em São João de Iracema, com uma produção que une tradição, qualidade e um visual que dá orgulho de apresentar.</p>
+                <div class="hero-actions">
+                    <a href="#products" class="button button-primary">Saiba mais</a>
+                    <a href="#units" class="button button-secondary">Ver unidades</a>
                 </div>
             </div>
-        </div>
-        <div class="history" id="history">
-            <h1>A Granja</h1>
-            <p>O surgimento da Granjacema teve início no ano de 1974, período em que a cidade ainda buscava expandir suas atividades produtivas além da agricultura tradicional. Foi nesse cenário que Jaiminho, morador da região e visionário para seu tempo, decidiu investir na criação de aves. Movido pelo desejo de oferecer uma nova alternativa econômica para a comunidade, ele começou de forma simples, com poucos galinheiros construídos no quintal de sua propriedade.</p>
-        </div>
-        <div class="units" id="units">
-            <div class="granja1">
-                <div class="texts-granja">
-                    <h3>Granja1</h3>
-                    <p>Localizada no sítio do seu Valter, <br> contamos com mais de 600 <br> galinhas nessa unidade.</p>
-                </div>
-                <div class="imggranja1">
-                    <img src="img/granja-de-frango.jpg" alt="">
-                </div>
-            </div>    
-            <div class="granja2">
-                <div class="imggranja2">
-                    <img src="img/poultry-farms-pictures-of-chickens-ducks-turkey_11153149.jpg!bw700" alt="">
-                </div>
-                <div class="texts-granja">
-                    <h3>Granja2</h3>
-                    <p>Localizada no sítio do seu Valter,<br> contamos com mais de 600 <br> galinhas nessa unidade.</p>
+
+            <div class="hero-visual" aria-hidden="true">
+                <div class="hero-orb"></div>
+                <img src="img/cornish-chicken-rooster-ai-generated-free-png.webp" alt="" class="hero-chicken">
+                <div class="hero-badge">
+                    <strong>1974</strong>
+                    <span>tradição no campo</span>
                 </div>
             </div>
-        </div>
-        <div class="products" id="products">
-            <div class="white-egg">
-                <div class="bar-r">
-                    <h3>Ovo Branco</h3>
-                    <p>Vêm de galinhas criadas em sistema intensivo, garantindo maior padronização e disponibilidade. São a opção mais comum no mercado, ideais para o dia a dia e para receitas em geral.</p>
-                </div>
-                <div class="circle-right">
-                    <img src="img/R-removebg-preview.png" alt="">
-                </div>
+        </section>
+
+        <section class="section-block history" id="history">
+            <div class="section-heading">
+                <p class="eyebrow">Nossa história</p>
+                <h2>A Granja</h2>
             </div>
-            <div class="free-range-egg">
-                <div class="circle-left">
-                    <img src="img/11044794-removebg-preview.png" alt="">
-                </div>
-                <div class="bar-l">
-                    <h3>Ovo Caipira</h3>
-                    <p>Produzidos por galinhas criadas soltas, que se alimentam de forma mais natural. Têm gema mais alaranjada, sabor marcante e são muito valorizados por quem busca qualidade e tradição na alimentação.</p>
-                </div>
+            <div class="story-card">
+                <p>O surgimento da Granjacema teve início no ano de 1974, período em que a cidade ainda buscava expandir suas atividades produtivas além da agricultura tradicional. Foi nesse cenário que Jaiminho, morador da região e visionário para seu tempo, decidiu investir na criação de aves. Movido pelo desejo de oferecer uma nova alternativa econômica para a comunidade, ele começou de forma simples, com poucos galinheiros construídos no quintal de sua propriedade.</p>
             </div>
-            <div class="quail-egg">
-                <div class="bar-r">
-                    <h3>Ovo Codorna</h3>
-                    <p>Pequenos e nutritivos, são ricos em proteínas e minerais. Muito usados em saladas, aperitivos e pratos especiais, unem sabor delicado e praticidade.</p>
-                </div>
-                <div class="circle-right">
-                    <img class="quail" src="img/pngtree-quail-eggs-quail-egg-appetizer-photo-png-image_13577044-removebg-preview.png" alt="">
-                </div>
+        </section>
+
+        <section class="section-block units" id="units">
+            <div class="section-heading centered">
+                <p class="eyebrow">Estrutura</p>
+                <h2>Unidades</h2>
             </div>
-        </div>
+
+            <div class="units-grid">
+                <article class="unit-card">
+                    <div class="unit-content">
+                        <p class="unit-label">Unidade 01</p>
+                        <h3>Sítio do seu Valter</h3>
+                        <p>Localizada no sítio do seu Valter, contamos com mais de 600 galinhas nessa unidade.</p>
+                    </div>
+                    <div class="unit-media frame">
+                        <img src="img/granja-de-frango.jpg" alt="Vista da primeira unidade da granja">
+                    </div>
+                </article>
+
+                <article class="unit-card unit-card-reverse">
+                    <div class="unit-content">
+                        <p class="unit-label">Unidade 02</p>
+                        <h3>Produção complementar</h3>
+                        <p>Uma estrutura planejada para manter volume, cuidado e estabilidade na rotina de criação.</p>
+                    </div>
+                    <div class="unit-media frame">
+                        <img src="img/poultry-farms-pictures-of-chickens-ducks-turkey_11153149.jpg!bw700" alt="Vista da segunda unidade da granja">
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-block products" id="products">
+            <div class="section-heading centered">
+                <p class="eyebrow">Linha de produtos</p>
+                <h2>Produtos</h2>
+            </div>
+
+            <div class="product-stack">
+                <article class="product-card product-card-right">
+                    <div class="product-text">
+                        <h3>Ovo Branco</h3>
+                        <p>Vêm de galinhas criadas em sistema intensivo, garantindo maior padronização e disponibilidade. São a opção mais comum no mercado, ideais para o dia a dia e para receitas em geral.</p>
+                    </div>
+                    <div class="product-visual orb orb-small">
+                        <img src="img/R-removebg-preview.png" alt="Ovos brancos">
+                    </div>
+                </article>
+
+                <article class="product-card product-card-left">
+                    <div class="product-visual orb orb-small">
+                        <img src="img/11044794-removebg-preview.png" alt="Ovos caipiras">
+                    </div>
+                    <div class="product-text">
+                        <h3>Ovo Caipira</h3>
+                        <p>Produzidos por galinhas criadas soltas, que se alimentam de forma mais natural. Têm gema mais alaranjada, sabor marcante e são muito valorizados por quem busca qualidade e tradição na alimentação.</p>
+                    </div>
+                </article>
+
+                <article class="product-card product-card-right">
+                    <div class="product-text">
+                        <h3>Ovo Codorna</h3>
+                        <p>Pequenos e nutritivos, são ricos em proteínas e minerais. Muito usados em saladas, aperitivos e pratos especiais, unem sabor delicado e praticidade.</p>
+                    </div>
+                    <div class="product-visual orb orb-small">
+                        <img class="quail" src="img/pngtree-quail-eggs-quail-egg-appetizer-photo-png-image_13577044-removebg-preview.png" alt="Ovos de codorna">
+                    </div>
+                </article>
+            </div>
+        </section>
     </main>
-    <footer class="footer">
-        <p>©2025 Granjacema</p>
+
+    <footer class="footer" id="contact">
+        <div class="footer-inner">
+            <p>©2026 Granjacema</p>
+            <p>Tradição, cuidado e qualidade todos os dias.</p>
+        </div>
     </footer>
 </body>
 </html>
